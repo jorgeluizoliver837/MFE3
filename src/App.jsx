@@ -4,7 +4,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   const handleCount = () => {
-    setCount((count) => count + 1);
+    setCount((prev) => prev + 1);
   }
 
   useEffect(() => {
