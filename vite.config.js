@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "mfe1",
+      name: "mfe3",
       filename: "remoteEntry.js",
       exposes: {
         "./App": "./src/App",
