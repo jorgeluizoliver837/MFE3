@@ -7,7 +7,9 @@ function App() {
     setCount((prev) => prev + 1);
   }
 
-  
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent('addItem', { detail: count }));
+  }, [count]);
 
   return (
     <>
